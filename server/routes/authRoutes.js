@@ -18,7 +18,7 @@ const {
 router.use(
   cors({
     credentials: true,
-    origin: "movie-tv-tracker.onrender.com:5173",
+    origin: "http://localhost:5173",
   })
 );
 
