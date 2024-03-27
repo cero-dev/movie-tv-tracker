@@ -80,6 +80,18 @@ const logoutUser = (req, res) => {
   res.json({ message: "Logout successful" });
 };
 
+const getProfile = (req, res) => {
+  const { token } = req.cookies;
+  if (token) {
+    jwt.verify(token, process.env.JWT_SECRET, {}, (err, user) => {
+      if (err) throw err;
+      res.json(user);
+    });
+  } else {
+    res.json(null);
+  }
+};
+
 const getMovieSearch = async (req, res) => {
   const { query } = req.query;
 
@@ -203,6 +215,7 @@ module.exports = {
   registerUser,
   loginUser,
   logoutUser,
+  getProfile,
   getMovieSearch,
   addToFavorites,
   getFavorites,

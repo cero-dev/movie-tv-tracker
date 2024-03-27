@@ -25,6 +25,7 @@ router.use(
 router.get("/", test);
 router.post("/register", registerUser);
 router.post("/login", loginUser);
+router.get("/profile", getProfile);
 router.get("/moviesearch", getMovieSearch);
 router.get("/favorites", getFavorites);
 router.patch("/favorites/:movieId", deleteFavorite);
