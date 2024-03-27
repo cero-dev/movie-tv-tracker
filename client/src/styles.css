@@ -1,0 +1,194 @@
+body {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  padding: 5px 10px;
+  height: 40px;
+
+  button {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+  }
+
+  button:hover {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  padding: 0 50px;
+}
+
+.favoritesContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style-type: none;
+    li {
+      background-color: rgb(39, 39, 39);
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      padding: 10px;
+      border: 1px solid black;
+      button {
+        font-size: 20px;
+        background-color: rgb(31, 31, 31);
+        border: none;
+        color: white;
+        height: 40px;
+      }
+
+      button:hover {
+        background-color: rgb(51, 51, 51);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.movieSearchContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input {
+    max-width: 150px;
+    width: 100%;
+  }
+  button {
+    padding: 4px 10px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+  }
+  button:hover {
+    background-color: rgb(63, 63, 63);
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style-type: none;
+    li {
+      background-color: rgb(39, 39, 39);
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      padding: 10px;
+      border: 1px solid black;
+      button {
+        font-size: 20px;
+        background-color: rgb(31, 31, 31);
+        border: none;
+        color: white;
+        height: 40px;
+      }
+
+      button:hover {
+        background-color: rgb(51, 51, 51);
+        cursor: pointer;
+      }
+
+      button:disabled {
+        background-color: rgb(53, 53, 53);
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.loginContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    label {
+      font-size: 40px;
+    }
+    input {
+      height: 40px;
+      font-size: 20px;
+    }
+    button {
+      font-size: 20px;
+      background-color: rgb(80, 80, 80);
+      border: none;
+      color: white;
+      height: 40px;
+    }
+
+    button:hover {
+      background-color: rgb(51, 51, 51);
+      cursor: pointer;
+    }
+  }
+}
+
+.registerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    label {
+      font-size: 40px;
+    }
+    input {
+      height: 40px;
+      font-size: 20px;
+    }
+    button {
+      font-size: 20px;
+      background-color: rgb(80, 80, 80);
+      border: none;
+      color: white;
+      height: 40px;
+    }
+
+    button:hover {
+      background-color: rgb(51, 51, 51);
+      cursor: pointer;
+    }
+  }
+}
